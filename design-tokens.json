@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "project": "Avora",
+    "description": "Meal planning & nutrition app prototype",
+    "version": "1.0.0"
+  },
+  "colors": {
+    "base": {
+      "ink":        { "value": "#141413", "usage": "Primary text, primary button background, logo" },
+      "cream":      { "value": "#faf9f5", "usage": "App background, primary button text" },
+      "warmWhite":  { "value": "#ffffff", "usage": "Card backgrounds, input fields" },
+      "stone":      { "value": "#f2f1eb", "usage": "Subtle surface backgrounds, phone prefix" },
+      "border":     { "value": "#e8e6dc", "usage": "Default borders and dividers" },
+      "borderMid":  { "value": "#d4d1c8", "usage": "Hover border, muted dividers" },
+      "borderSoft": { "value": "#c8c5bb", "usage": "Input field borders" }
+    },
+    "text": {
+      "muted":      { "value": "#b0aea5", "usage": "Divider labels, placeholder" },
+      "subdued":    { "value": "#8a8880", "usage": "Nav labels, hints, meta text" },
+      "body":       { "value": "#5e5c55", "usage": "Secondary body copy" },
+      "warm":       { "value": "#3a3830", "usage": "Dark warm grey text" }
+    },
+    "brand": {
+      "green":      { "value": "#788c5d", "usage": "Primary accent — active states, progress, OTP active" },
+      "greenLight": { "value": "#c8d9ab", "usage": "Success border, gentle accent, filled OTP" },
+      "greenTint":  { "value": "#f0f4eb", "usage": "Secondary button bg, selected chips, trust strip" },
+      "greenDark":  { "value": "#3d5230", "usage": "Secondary button text, tag text" },
+      "greenDeep":  { "value": "#4a5836", "usage": "Card-line verified text" }
+    },
+    "semantic": {
+      "danger":       { "value": "#e0473a", "usage": "Saved/heart active, warning states" },
+      "warningBg":    { "value": "#fef6ec", "usage": "Allergen warning tag background" },
+      "warningText":  { "value": "#7a3f18", "usage": "Allergen warning tag text" },
+      "googleBlue":   { "value": "#4285F4", "usage": "Google social login button only" }
+    }
+  },
+  "typography": {
+    "families": {
+      "display": "Lora, Georgia, serif",
+      "ui":      "Poppins, Arial, sans-serif"
+    },
+    "weights": {
+      "regular":    400,
+      "semibold":   600,
+      "bold":       700,
+      "extraBold":  800
+    },
+    "scale": {
+      "nano":       { "size": "10px",  "usage": "Bottom nav labels" },
+      "micro":      { "size": "11px",  "usage": "Tags, ingredient labels, metric labels, card badges" },
+      "tiny":       { "size": "12px",  "usage": "Filter chips, small button labels, step numbers" },
+      "small":      { "size": "13px",  "usage": "Body small, skip hints, auth divider" },
+      "body":       { "size": "14px",  "usage": "Primary button labels, body copy, social buttons" },
+      "bodyLarge":  { "size": "15px",  "usage": "Setup body text, auth CTA label" },
+      "caption":    { "size": "16px",  "usage": "Social button icons, card headings" },
+      "subhead":    { "size": "18px",  "usage": "Section headings, metric values" },
+      "display1":   { "size": "24px",  "usage": "OTP digit slots" },
+      "display2":   { "size": "28px",  "usage": "Household stepper number" },
+      "display3":   { "size": "32px",  "usage": "Recipe title" },
+      "display4":   { "size": "40px",  "usage": "Cooking time readout" },
+      "hero":       { "size": "42px",  "usage": "Splash screen logo / app name" }
+    }
+  },
+  "radii": {
+    "xs":     "8px",
+    "sm":     "12px",
+    "md":     "14px",
+    "lg":     "16px",
+    "xl":     "18px",
+    "2xl":    "28px",
+    "full":   "999px",
+    "circle": "50%"
+  },
+  "spacing": {
+    "screenPadding":  "18px",
+    "cardPadding":    "16px",
+    "componentGap":   "8px",
+    "sectionGap":     "12px",
+    "cardGap":        "18px"
+  },
+  "shadows": {
+    "app":         "0 18px 70px rgba(20, 20, 19, 0.10)",
+    "button":      "0 10px 28px rgba(20, 20, 19, 0.16)",
+    "buttonHover": "0 14px 34px rgba(20, 20, 19, 0.20)",
+    "navItem":     "0 6px 16px rgba(20, 20, 19, 0.14)",
+    "card":        "0 8px 22px rgba(20, 20, 19, 0.08)"
+  },
+  "motion": {
+    "standard":  "180ms cubic-bezier(0.2, 0, 0, 1)",
+    "enter":     "220ms cubic-bezier(0.22, 1, 0.36, 1)",
+    "exit":      "160ms cubic-bezier(0.2, 0, 0, 1)",
+    "spring":    "300ms cubic-bezier(0.65, 0, 0.45, 1)"
+  },
+  "components": {
+    "primaryButton":   { "height": "52px", "radius": "14px", "font": "14px/800/Poppins", "bg": "#141413", "color": "#faf9f5" },
+    "secondaryButton": { "height": "52px", "radius": "14px", "font": "14px/800/Poppins", "bg": "#f0f4eb", "color": "#3d5230" },
+    "chip":            { "height": "40px", "radius": "999px", "font": "12px/700/Poppins", "border": "#e8e6dc" },
+    "card":            { "radius": "18px", "bg": "#ffffff", "border": "#e8e6dc" },
+    "navItem":         { "height": "56px", "radius": "14px", "font": "10px/800/Poppins" },
+    "heroButton":      { "size": "38px", "radius": "50%", "bg": "rgba(250,249,245,0.88)" },
+    "otpSlot":         { "width": "46px", "height": "58px", "radius": "16px", "font": "24px/800/Poppins" }
+  },
+  "liveUrl": "https://juanreretief-blip.github.io/Avora-App-/"
+}
