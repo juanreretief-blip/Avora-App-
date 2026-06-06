@@ -1,0 +1,234 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+
+  /* ─── Core Semantic Tokens — Avora Premium ──────────────────── */
+  --background: #faf9f5;
+  --foreground: #141413;
+  --card: #ffffff;
+  --card-foreground: #141413;
+  --popover: #ffffff;
+  --popover-foreground: #141413;
+
+  /* Primary: Near-black — decisive, premium */
+  --primary: #141413;
+  --primary-foreground: #faf9f5;
+
+  /* Secondary: Soft sage tint */
+  --secondary: #f0f4eb;
+  --secondary-foreground: #3d5230;
+
+  /* Accent: Brand sage green */
+  --accent: #f0f4eb;
+  --accent-foreground: #3d5230;
+
+  /* Muted */
+  --muted: #f2f1eb;
+  --muted-foreground: #5e5c55;
+
+  /* Destructive */
+  --destructive: #8a2020;
+  --destructive-foreground: #faf9f5;
+
+  /* Border & Input */
+  --border: #e8e6dc;
+  --input: transparent;
+  --input-background: #f2f1eb;
+  --switch-background: #c8c6bc;
+
+  /* Typography weights */
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+
+  /* Focus ring */
+  --ring: #788c5d;
+
+  /* Charts */
+  --chart-1: #788c5d;
+  --chart-2: #a3bc82;
+  --chart-3: #c4d5ac;
+  --chart-4: #5e5c55;
+  --chart-5: #b0aea5;
+
+  --radius: 0.75rem;
+
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #141413;
+  --sidebar-primary: #141413;
+  --sidebar-primary-foreground: #faf9f5;
+  --sidebar-accent: #f0f4eb;
+  --sidebar-accent-foreground: #3d5230;
+  --sidebar-border: #e8e6dc;
+  --sidebar-ring: #788c5d;
+
+  /* ─── Avora Brand Palette — Singular, Refined ───────────────── */
+
+  /* Brand Greens — one hue family, muted sage */
+  --gf-green-50:  #f4f7ef;
+  --gf-green-100: #e4edd5;
+  --gf-green-200: #c8d9ab;
+  --gf-green-300: #a3bc82;
+  --gf-green-400: #8fa36e;
+  --gf-green-500: #788c5d;   /* Brand accent — tertiary per guidelines */
+  --gf-green-600: #5f7047;
+  --gf-green-700: #4a5836;
+  --gf-green-800: #344027;
+  --gf-green-900: #1e2616;
+
+  /* Warm Neutrals — the soul of the palette */
+  --gf-warm-50:  #faf9f5;    /* App background — brand Light */
+  --gf-warm-100: #f2f1eb;
+  --gf-warm-200: #e8e6dc;    /* Borders — brand Light Gray */
+  --gf-warm-300: #d4d1c8;
+  --gf-warm-400: #b0aea5;    /* Muted — brand Mid Gray */
+  --gf-warm-500: #8a8880;
+  --gf-warm-600: #5e5c55;
+  --gf-warm-700: #3a3830;
+  --gf-warm-900: #141413;    /* Near-black — brand Dark */
+
+  /* Semantic — purposeful, never decorative */
+  --gf-success-bg:   #f0f4eb;
+  --gf-success-text: #3d5230;
+  --gf-success-ring: #788c5d;
+
+  --gf-warning-bg:   #fef6ec;
+  --gf-warning-text: #7a3f18;
+  --gf-warning-ring: #c4824a;
+
+  --gf-error-bg:     #fdeaea;
+  --gf-error-text:   #7a1c1c;
+  --gf-error-ring:   #a83232;
+
+  --gf-info-bg:      #f2f1eb;
+  --gf-info-text:    #3a3830;
+  --gf-info-ring:    #5e5c55;
+
+  /* Shadows — barely-there, sophisticated */
+  --gf-shadow-xs: 0 1px 2px rgba(20, 20, 19, 0.04);
+  --gf-shadow-sm: 0 1px 3px rgba(20, 20, 19, 0.06), 0 1px 2px rgba(20, 20, 19, 0.03);
+  --gf-shadow-md: 0 2px 8px rgba(20, 20, 19, 0.07), 0 1px 3px rgba(20, 20, 19, 0.04);
+  --gf-shadow-lg: 0 4px 16px rgba(20, 20, 19, 0.08), 0 2px 6px rgba(20, 20, 19, 0.05);
+  --gf-shadow-xl: 0 8px 32px rgba(20, 20, 19, 0.10), 0 4px 12px rgba(20, 20, 19, 0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-gf-green-50:  var(--gf-green-50);
+  --color-gf-green-100: var(--gf-green-100);
+  --color-gf-green-200: var(--gf-green-200);
+  --color-gf-green-300: var(--gf-green-300);
+  --color-gf-green-400: var(--gf-green-400);
+  --color-gf-green-500: var(--gf-green-500);
+  --color-gf-green-600: var(--gf-green-600);
+  --color-gf-green-700: var(--gf-green-700);
+  --color-gf-warm-50:  var(--gf-warm-50);
+  --color-gf-warm-100: var(--gf-warm-100);
+  --color-gf-warm-200: var(--gf-warm-200);
+  --color-gf-warm-400: var(--gf-warm-400);
+  --color-gf-warm-600: var(--gf-warm-600);
+  --color-gf-warm-900: var(--gf-warm-900);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lora', Georgia, serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  button, label, input, select, textarea, nav, [role="navigation"] {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.35;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
